@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>PravStrum</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230226195734">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup popup_1">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__body">
+						<div class="popup__info info">
+							<h3 class="info__title">Треба за здоров'я</h3>
+							<h2 class="info__sub-title">Проскомідія</h2>
+							<div class="info__text">
+								Це найважливіше вшанування живих. Для цього слід перед початком літургії (або напередодні увечері)
+								подати до церкви записки з їхніми іменами (вписувати можна лише хрещених, православних). На
+								проскомідії з просфор будуть вийняті частки за їхнє здоров'я, а наприкінці літургії опущені у святу
+								чашу та обмиті Кров'ю Божого Сина на знак обмивання Христом людських гріхів. Пам'ятаймо, що поминання
+								на Божественній літургії – це найбільше благо для тих, хто нам дорогий.
+							</div>
+						</div>
+						<div data-showmore class="popup__item item-popup">
+							<div class="item-popup__title">Напишіть імя людини за котру подаєте требу</div>
+							<div data-showmore-content="30" class="item-popup__form">
+								<input autocomple te="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<input autocomple te="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<input autocomple te="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<input autocomple te="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<input autocomple te="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<input autocomple te="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<input autocomple te="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<input autocomple te="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<input autocomple te="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<button data-showmore-button type="button" class="block__more">
+									<span>Додати ще</span>
+									<span>Приховати</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<button data-close type="button" class="popup__close">Закрити</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup2" aria-hidden="true" class="popup popup_1">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__body">
+						<div class="popup__info info">
+							<h3 class="info__title">Треба за здоров'я</h3>
+							<h2 class="info__sub-title">Заказна записка</h2>
+							<div class="info__text">
+								Священик згадує на ім'я
+								людей, записаних у ній, на ПРОСКОМІДІЇ. Проскомідією в даному випадку називається поминання людей з
+								вилученням частинок з просфор на згадку про живих хрещених членів Церкви. Ці частинки вилучаються з
+								читанням поминальних слів, а потім на Літургії занурюються священиком у Чашу зі Святими Дарами під час
+								промови молитви: «відмий (тобто очисти), Господи, гріхи, що згадувалися тут», тобто священик просить
+								Христа, щоб Він своєю кров'ю , пролитої за гріхи світу, очистив від гріхів усіх тих, за кого і на
+								згадку про кого вийнято з просфор частки.
+							</div>
+						</div>
+						<div data-showmore data-showmore="items" class="popup__item item-popup">
+							<div class="item-popup__title"></div>
+							<div data-showmore-content="10" class="item-popup__form">
+								<input autocomplete="off" type="text" name="username[]" placeholder="Введіть ім'я" class="input ">
+								<button data-showmore-button type="button" class="block__more">
+									<span>Показати ще</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<button data-close type="button" class="popup__close">Закрити</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- ======================================================================================================================= -->
+
+		<div id="schedule" aria-hidden="true" class="popup schedule-popup">
+			<div class="popup__wrapper schedule-popup__wrapper">
+				<div class="popup__content schedule-popup__content content-popup-schedule">
+
+					<!-- <div class="schedule-popup__image-head">
+				<picture><source srcset="img/header-popup/22.webp" type="image/webp"><img src="img/header-popup/22.png" alt=""></picture>
+			</div> -->
+					<div class="content-popup-schedule content-popup-schedule_pseudo">
+						<div class="content-popup-schedule__image">
+							<picture><source srcset="img/header-popup/01.webp" type="image/webp"><img src="img/header-popup/01.jpg" alt="Image"></picture>
+						</div>
+						<div class="content-popup-schedule__items item-popup">
+							<div class="item-popup__content">
+								<div class="item-popup__body body-popup-bottom">
+									<div class="body-popup-bottom__time">16.00</div>
+									<div class="body-popup-bottom__head head-bottom">
+										<div class="head-bottom__title">Субота 01.01.2000</div>
+										<div class="head-bottom__sub-title head-bottom__sub-title_red">Всенічне бдіння</div>
+									</div>
+								</div>
+								<div class="item-popup__body body-popup-top">
+									<div class="body-popup-top__time">09.00</div>
+									<div class="body-popup-top__title title-popup">
+										<div class="title-popup__data">Неділя 02.01.2000</div>
+										<div class="title-popup__name title-popup__name_red">Мученика Трифона (250). Мучениці Перпетуї,
+											мучеників Сатира, Ревоката, Саторнила, Секунда і мучениці Філіцитати (202–203). Преподобного
+											Петра
+											Галатійського (429). Преподобного Вендиміана, пустельника Вифінійського (бл. 512).</div>
+										<div class="title-popup__divine">Божественна літургія</div>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+					<div class="content-popup-schedule content-popup-schedule_pseudo">
+						<div class="content-popup-schedule__image">
+							<picture><source srcset="img/header-popup/02.webp" type="image/webp"><img src="img/header-popup/02.jpg" alt="Image"></picture>
+						</div>
+						<div class="content-popup-schedule__items item-popup">
+							<div class="item-popup__content">
+								<div class="item-popup__body body-popup-bottom">
+									<div class="body-popup-bottom__time">16.00</div>
+									<div class="body-popup-bottom__head head-bottom">
+										<div class="head-bottom__title">Субота 01.01.2000</div>
+										<div class="head-bottom__sub-title head-bottom__sub-title_red">Всенічне бдіння</div>
+									</div>
+								</div>
+								<div class="item-popup__body body-popup-top">
+									<div class="body-popup-top__time">09.00</div>
+									<div class="body-popup-top__title title-popup">
+										<div class="title-popup__data">Неділя 02.01.2000</div>
+										<div class="title-popup__name title-popup__name_red">Мученика Трифона (250). Мучениці Перпетуї,
+											мучеників Сатира, Ревоката, Саторнила, Секунда і мучениці Філіцитати (202–203). Преподобного
+											Петра
+											Галатійського (429). Преподобного Вендиміана, пустельника Вифінійського (бл. 512).</div>
+										<div class="title-popup__divine">Божественна літургія</div>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+					<div class="content-popup-schedule content-popup-schedule_pseudo">
+						<div class="content-popup-schedule__image">
+							<picture><source srcset="img/header-popup/01.webp" type="image/webp"><img src="img/header-popup/01.jpg" alt="Image"></picture>
+						</div>
+						<div class="content-popup-schedule__items item-popup">
+							<div class="item-popup__content">
+								<div class="item-popup__body body-popup-bottom">
+									<div class="body-popup-bottom__time">16.00</div>
+									<div class="body-popup-bottom__head head-bottom">
+										<div class="head-bottom__title">Субота 01.01.2000</div>
+										<div class="head-bottom__sub-title head-bottom__sub-title_red">Всенічне бдіння</div>
+									</div>
+								</div>
+								<div class="item-popup__body body-popup-top">
+									<div class="body-popup-top__time">09.00</div>
+									<div class="body-popup-top__title title-popup">
+										<div class="title-popup__data">Неділя 02.01.2000</div>
+										<div class="title-popup__name title-popup__name_red">Мученика Трифона (250). Мучениці Перпетуї,
+											мучеників Сатира, Ревоката, Саторнила, Секунда і мучениці Філіцитати (202–203). Преподобного
+											Петра
+											Галатійського (429). Преподобного Вендиміана, пустельника Вифінійського (бл. 512).</div>
+										<div class="title-popup__divine">Божественна літургія</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-popup-schedule content-popup-schedule_pseudo">
+						<div class="content-popup-schedule__image">
+							<picture><source srcset="img/header-popup/01.webp" type="image/webp"><img src="img/header-popup/01.jpg" alt="Image"></picture>
+						</div>
+						<div class="content-popup-schedule__items item-popup">
+							<div class="item-popup__content">
+								<div class="item-popup__body body-popup-bottom">
+									<div class="body-popup-bottom__time">16.00</div>
+									<div class="body-popup-bottom__head head-bottom">
+										<div class="head-bottom__title">Субота 01.01.2000</div>
+										<div class="head-bottom__sub-title head-bottom__sub-title_red">Всенічне бдіння</div>
+									</div>
+								</div>
+								<div class="item-popup__body body-popup-top">
+									<div class="body-popup-top__time">09.00</div>
+									<div class="body-popup-top__title title-popup">
+										<div class="title-popup__data">Неділя 02.01.2000</div>
+										<div class="title-popup__name title-popup__name_red">Мученика Трифона (250). Мучениці Перпетуї,
+											мучеників Сатира, Ревоката, Саторнила, Секунда і мучениці Філіцитати (202–203). Преподобного
+											Петра
+											Галатійського (429). Преподобного Вендиміана, пустельника Вифінійського (бл. 512).</div>
+										<div class="title-popup__divine">Божественна літургія</div>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+					<button data-close type="button" class="schedule-popup__close "><span></span></button>
+				</div>
+			</div>
+		</div>
+
+		<!-- ======================================================================================================================= -->
+		<header data-scroll="120" data-scroll-show="500" class="header _header-scroll _header-show">
+			<div class="header__container-big">
+				<!-- <div class="header__logo">
+			Lorem, ipsum dolor.
+		</div> -->
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a href="#news" class="menu__link">Новини</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Галерея</a></li>
+							<li class="menu__item"><a href="#famaly" class="menu__link">Родина </a></li>
+							<li class="menu__item"><a href="#school" class="menu__link">Маленька школа</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Молодіжка</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__action action-header">
+					<button data-popup="#schedule" type="button" class="action-header__button">Розклад богослужінь</button>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__header">
+						<div class="main__title title-main">
+							<div class="title-main__head">Українська Православна Церква</div>
+							<div class="title-main__name">Храм св. апостола Андрія Первозванного <br> с. Струмівка</div>
+							<div class="title-main__cross"></div>
+						</div>
+					</div>
+					<div class="main__body">
+						<div class="main__image-ap">
+							<picture><source srcset="img/main/03.webp" type="image/webp"><img src="img/main/03.png" alt=""></picture>
+						</div>
+						<div class="main__image-church"></div>
+					</div>
+					<div class="main__cloud cloud-main">
+						<picture><source srcset="img/cloud/cloud-01.webp" type="image/webp"><img src="img/cloud/cloud-01.png" alt="" class="cloud-main__cloud1"></picture>
+						<picture><source srcset="img/cloud/cloud-02.webp" type="image/webp"><img src="img/cloud/cloud-02.png" alt="" class="cloud-main__cloud2"></picture>
+						<picture><source srcset="img/cloud/cloud-03.webp" type="image/webp"><img src="img/cloud/cloud-03.png" alt="" class="cloud-main__cloud3"></picture>
+						<picture><source srcset="img/cloud/cloud-04.webp" type="image/webp"><img src="img/cloud/cloud-04.png" alt="" class="cloud-main__cloud4"></picture>
+					</div>
+				</div>
+			</section>
+			<div class="page__blockquote blockquote">
+				<div class="blockquote__container">
+					<!-- Оболочка слайдера -->
+					<div class="blockquote__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="blockquote__wrapper swiper-wrapper ">
+							<!-- Слайд -->
+							<div class="blockquote__slide swiper-slide ">
+								<p class="slide-blockquote__text">Просіть і дано буде вам, шукайте і знайдете. Стукайте і двері
+									відчиняться перед вами. Хто просить, отримає; хто шукає, завжди знайде; і відчиняться двері
+									перед тим, хто стукає. </p>
+								<p class="slide-blockquote__link">Мф. 7:7,8</p>
+							</div>
+							<div class="blockquote__slide swiper-slide ">
+								<p class="slide-blockquote__text">Так бо Бог полюбив світ, що дав Сина Свого Єдинородного, щоб
+									кожен, хто вірує в Нього, не згинув, але мав життя вічне. </p>
+								<p class="slide-blockquote__link">Ін. 3:16</p>
+							</div>
+							<div class="blockquote__slide swiper-slide">
+								<p class="slide-blockquote__text">Страх Господній початок премудрості.</p>
+								<p class="slide-blockquote__link">Притч. 1:7</p>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<section id="famaly" class="page__famaly famaly">
+				<div class="famaly__container">
+					<div class="famaly__title">"Родина"</div>
+					<div class="famaly__content content-famaly">
+						<div class="content-famaly__info">
+							<div class="content-famaly__text">Вже багато років назад при духовно просвітницькому центрі
+								"Родина" було засновано молодіжку. Наша
+								діяльність доволі багатогранна, ведемо активне молодіжне життя і є співорганізаторами
+								різноманітних
+								молодіжних та дитячих заходів. Щонеділі зустрічаємось для вивчення Святого Письма та
+								спілкування.</div>
+							<button type="bytton" class="content-famaly__button"><a href="famaly.html" target="_blank">Перейти</a></button>
+						</div>
+						<div class="content-famaly__image">
+							<picture><source srcset="img/famaly/01.webp" type="image/webp"><img src="img/famaly/01.jpg" alt="Image"></picture>
+						</div>
+					</div>
+					<div class="famaly__sub-title">Допоможемо нашим воїнам</div>
+					<div class="famaly__help ">
+						<div class="famaly__item item-famaly">
+							<div class="item-famaly__title">Чим ми можемо допомогти</div>
+							<div class="item-famaly__text">В нашому волонтерському штабі організований пункт збору речей
+								необхідних для потреб ЗСУ</div>
+							<button type="button" class="item-famaly__button">Детальніше ...</button>
+						</div>
+						<div class="famaly__item item-famaly">
+							<div class="item-famaly__title">Грошовий збір</div>
+							<div class="item-famaly__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+								laborum.</div>
+							<button type="button" class="item-famaly__button">Детальніше ...</button>
+						</div>
+						<div class="famaly__item item-famaly">
+							<div class="item-famaly__title">Молитви</div>
+							<div class="item-famaly__text">За воїнів, на полі брані, ранених, за тих хто в полоні, без відому
+								пропавших для домашнього келейного читання</div>
+							<button type="button" class="item-famaly__button">Детальніше ...</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="school" class="page__school school">
+				<div class="school__container">
+					<div class="school__content">
+						<div class="school__image">
+							<div class="school__polaroid school__polaroid_1">
+								<picture><source srcset="img/school/01.webp" type="image/webp"><img src="img/school/01.jpg" alt="Image"></picture>
+								<p>Child school 2004</p>
+							</div>
+							<div class="school__polaroid school__polaroid_2">
+								<picture><source srcset="img/school/01.webp" type="image/webp"><img src="img/school/01.jpg" alt="Image"></picture>
+								<p>Child school 2004</p>
+							</div>
+							<div class="school__polaroid school__polaroid_3">
+								<picture><source srcset="img/school/01.webp" type="image/webp"><img src="img/school/01.jpg" alt="Image"></picture>
+								<p>Child school 2004</p>
+							</div>
+							<div class="school__polaroid school__polaroid_4">
+								<picture><source srcset="img/school/01.webp" type="image/webp"><img src="img/school/01.jpg" alt="Image"></picture>
+								<p>Child school 2004</p>
+							</div>
+						</div>
+						<div class="school__info info-school">
+							<div class="info-school__title">Маленька школа</div>
+							<div class="info-school__text">З вересня минулого року збирає на заняття діток -дошкільнят
+								"Маленька
+								школа".
+								Двічі на тиждень, у середу та неділю, малят чекаємо на уроки читання, письма, математики та
+								логіки.
+								Наші маленькі школярики дууууже старанні, адже вже наступного року вони навчатимуться у Дорослій
+								школі.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="news" data-showmore="items" class="page__news news">
+				<div class="news__container">
+					<h2 class="news__title">Новини</h2>
+					<div data-showmore-content="1" class="news__column ">
+						<div class="news__block">
+							<div class="news__body body-item">
+								<div class="body-item__image">
+									<picture><source srcset="img/news/03.webp" type="image/webp"><img src="img/news/03.jpg" alt="Image"></picture>
+								</div>
+								<div class="body-item__title">Заголовок події </div>
+								<div class="body-item__sub-title body-item__sub-title_red">Молодіжка</div>
+
+								<div class="body-item__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+									minima nihil deleniti vel vitae autem expedita illo similique sed? Amet vero accusamus
+									maiores quam omnis fuga! Officiis, fuga nulla.</div>
+								<a href="news.html" target="_blank" class="body-item__link"><span>Детальніше</span></a>
+								<!-- <div class="body-item__date">03.05.2023</div> -->
+							</div>
+
+						</div>
+						<div class="news__block">
+							<div class="news__body body-item">
+								<div class="body-item__image">
+									<picture><source srcset="img/news/01.webp" type="image/webp"><img src="img/news/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="body-item__title">Заголовок події</div>
+								<div class="body-item__sub-title body-item__sub-title_green">Родина</div>
+
+								<div class="body-item__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Veritatis debitis in minus inventore error, eaque natus asperiores aliquam odio
+
+									maiores quam omnis fuga! Officiis, fuga nulla.</div>
+								<a href="news.html" target="_blank" class="body-item__link"><span>Lorem, ipsum</span></a>
+								<!-- <div class="body-item__date">03.05.2023</div> -->
+							</div>
+
+						</div>
+						<div class="news__block">
+							<div class="news__body body-item">
+								<div class="body-item__image">
+									<picture><source srcset="img/news/02.webp" type="image/webp"><img src="img/news/02.jpg" alt="Image"></picture>
+								</div>
+								<div class="body-item__title">Заголовок події</div>
+								<div class="body-item__sub-title body-item__sub-title_blue">Маленька школа</div>
+								<div class="body-item__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at,
+
+									maiores quam omnis fuga! Officiis, fuga nulla.</div>
+								<a href="news.html" target="_blank" class="body-item__link"><span>Lorem, ipsum</span></a>
+								<!-- <div class="body-item__date">03.05.2023</div> -->
+							</div>
+
+						</div>
+						<div class="news__block">
+							<div class="news__body body-item">
+								<div class="body-item__image">
+									<picture><source srcset="img/news/02.webp" type="image/webp"><img src="img/news/02.jpg" alt="Image"></picture>
+								</div>
+								<div class="body-item__title">Заголовок події</div>
+								<!-- <div class="body-item__sub-title body-item__sub-title_color-red">Молодіжка</div> -->
+								<div class="body-item__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at,
+
+									maiores quam omnis fuga! Officiis, fuga nulla.</div>
+								<a href="news.html" target="_blank" class="body-item__link"><span>Lorem, ipsum</span></a>
+								<!-- <div class="body-item__date">03.05.2023</div> -->
+							</div>
+
+						</div>
+					</div>
+					<button hidden data-showmore-button type="button" class="news__btn">
+						<span>Показати ще ...</span>
+						<span>Приховати</span>
+					</button>
+				</div>
+			</section>
+			<section class="page__healts healts">
+				<div class="healts__container">
+					<div class="healts__header">
+						<h2>Подати записку онлайн</h2>
+					</div>
+					<div class="healts__body body-healts">
+						<div class="body-healts__content content-healts">
+							<div class="content-healts__t">
+								<div class="content-healts__head head-healts">
+									<div class="head-healts__image">
+										<picture><source srcset="img/border-left.webp" type="image/webp"><img src="img/border-left.png" alt=""></picture>
+									</div>
+									<div class="head-healts__image-cross">
+										<picture><source srcset="img/cross48.webp" type="image/webp"><img src="img/cross48.png" alt=""></picture>
+									</div>
+									<h4 class="head-healts__title">За здоров'я</h4>
+								</div>
+							</div>
+							<div class="content-healts__b">
+								<div data-popup="#popup" class="content-healts__items item-healts ">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Проскомідія</div>
+									<div class="item-healts__price">1 грн. за одне ім'я</div>
+								</div>
+								<div data-popup="#popup2" class="content-healts__items item-healts">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Заказна записка за здоров'я</div>
+									<div class="item-healts__price">5 грн. за одне ім'я</div>
+								</div>
+								<div data-popup="#popup" class="content-healts__items item-healts">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Сорокоуст</div>
+									<div class="item-healts__price">40 грн. за одне ім'я</div>
+								</div>
+								<div data-popup="#popup" class="content-healts__items item-healts">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Поминання на пів року</div>
+									<div class="item-healts__price">100 грн. за одне ім'я</div>
+								</div>
+								<div data-popup="#popup" class="content-healts__items item-healts">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Поминання на рік</div>
+									<div class="item-healts__price">200 грн. за одне ім'я</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="body-healts__content content-healts">
+							<div class="content-healts__t content-healts__t_hv">
+								<div class="content-healts__head head-healts ">
+									<div class="head-healts__image">
+										<picture><source srcset="img/border-left.webp" type="image/webp"><img src="img/border-left.png" alt=""></picture>
+									</div>
+									<div class="head-healts__image-cross">
+										<picture><source srcset="img/cross48.webp" type="image/webp"><img src="img/cross48.png" alt=""></picture>
+									</div>
+									<h4 class="head-healts__title">За упокій</h4>
+								</div>
+							</div>
+							<div class="content-healts__b">
+								<div class="content-healts__items item-healts item-healts_hv">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Проскомідія</div>
+									<div class="item-healts__price">1 грн. за одне ім'я</div>
+								</div>
+								<div class="content-healts__items item-healts item-healts_hv">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Заказна записка за здоров'я</div>
+									<div class="item-healts__price">5 грн. за одне ім'я</div>
+								</div>
+								<div class="content-healts__items item-healts item-healts_hv">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Сорокоуст</div>
+									<div class="item-healts__price">40 грн. за одне ім'я</div>
+								</div>
+								<div class="content-healts__items item-healts item-healts_hv">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Поминання на пів року</div>
+									<div class="item-healts__price">100 грн. за одне ім'я</div>
+								</div>
+								<div class="content-healts__items item-healts item-healts_hv">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Поминання на рік</div>
+									<div class="item-healts__price">200 грн. за одне ім'я</div>
+								</div>
+								<div class="content-healts__items item-healts item-healts_hv">
+									<div class="item-healts__image-bdr">
+										<picture><source srcset="img/border-min.webp" type="image/webp"><img src="img/border-min.png" alt=""></picture>
+									</div>
+									<div class="item-healts__image-cross">
+									</div>
+									<div class="item-healts__title">Панахіда</div>
+									<div class="item-healts__price">50 грн. </div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<div class="footer ">
+			<div class="footer__container">
+				<!-- <div id="webgl" class="footer__image">
+			<picture><source srcset="img/footer/01.webp" type="image/webp"><img src="img/footer/01.png" alt="Image"></picture>
+		</div> -->
+				<div class="footer__content content-footer">
+					<div></div>
+					<div class="content-footer__info">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur expedita, veritatis iusto quisquam
+						delectus labore, molestias impedit iste quidem velit et, molestiae officia? Molestiae omnis iusto natus
+						aperiam dolor?
+					</div>
+					<div class="content-footer__social">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consequuntur. Fugiat, nihil! Non
+						recusandae
+						tempora enim itaque, beatae impedit perspiciatis, distinctio alias minus nesciunt in incidunt adipisci
+						maiores.
+						Eum, natus?
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230226195734"></script>
+	@ko-yelie/kgl v0.2.3
+	https://github.com/ko-yelie/kgl#readme
+</body>
+
+</html>
+
+<!-- @_prav_strum - це те місце , де ви зможете почерпнути цікаву інформацію, гарно та з користю
+провести час і знайти класних друзів, (або… свою половинку! - так, у нас бувають і такі випадки).
+Ми завжди раді гостям! До зустрічі в неділю о 19:00 !
+Від початку повномасштабного вторгнення в Україну наша община організувала невеликий волонтерський
+штаб.
+З перших днів війни у нас знайшли тимчасовий прихисток понад 220 людей.
+З Божою допомогою було здійснено декілька поїздок з гуманітарною допомогою в населені пункти
+Київської, Житомирської, Миколаївської та ін.областей.
+На передову військовим передаємо бронежилети, розгрузки, засоби гігієни, продукти харчування,
+маскувальні сітки, бліндажні свічки, грілки...
+На даний час працюємо в трьох напрямках:
+- виготовлення бліндажних свічок;
+-сіткарня( виготовлення маскувальних сіток);
+- фуд-локація( виготовлення вітамінних та імуностимулюючих сумішей, асорті сухофруктів,
+виготовлення печива, м'ясних та овочевих консерв, сала з часником і паприкою...)
+Працюємо щодня з 18 00 до 22.00 год.. Бажаючих, запрошуємо долучатись! -->
